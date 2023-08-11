@@ -1,0 +1,998 @@
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-transform: capitalize;
+}
+
+.top {
+  width: 100%;
+  height: 100vh;
+  background-color: #f9e1d5;
+  justify-content: center;
+  padding-top: 7%;
+  padding-right: 5%;
+}
+.top > * {
+  width: 40%;
+  position: relative;
+}
+.top:hover > .image > figure:nth-of-type(1) {
+  top: 3%;
+  right: 0%;
+  z-index: 100;
+  opacity: 1;
+}
+.top:hover > .image > figure:nth-of-type(2) {
+  top: 6%;
+  right: 3%;
+  opacity: 0.5;
+}
+.top .image {
+  height: 75%;
+  z-index: 1;
+}
+.top .image > figure {
+  transition: 1s;
+  width: 80%;
+  height: 100%;
+  position: absolute;
+}
+.top .image > figure:nth-of-type(1) {
+  top: 6%;
+  right: 3%;
+  opacity: 0.5;
+}
+.top .image > figure:nth-of-type(2) {
+  top: 3%;
+  right: 0%;
+  opacity: 1;
+}
+.top .image > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.top:hover > .article > .perfect > h3:nth-of-type(1) {
+  opacity: 0;
+}
+.top:hover > .article > .perfect > h3:nth-of-type(2) {
+  opacity: 1;
+}
+.top:hover > .article > .perfect > h3:nth-of-type(2) > strong {
+  background-color: rgba(255, 255, 255, 0.8823529412);
+}
+.top .article {
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+}
+.top .article > *:not(span) {
+  color: #252537;
+  width: 100%;
+}
+.top .article .perfect {
+  position: absolute;
+  top: 0;
+  left: 20%;
+}
+.top .article .perfect > * {
+  height: 100%;
+}
+.top .article .perfect > h3 {
+  transition: 1s;
+  font-size: 22px;
+  text-transform: capitalize;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Roboto", sans-serif;
+}
+.top .article .perfect > h3 > strong {
+  font-family: "Poppins", sans-serif;
+}
+.top .article .perfect > h3:nth-of-type(1) {
+  opacity: 1;
+}
+.top .article .perfect > h3:nth-of-type(1) > strong {
+  background-color: rgba(255, 255, 255, 0.8823529412);
+}
+.top .article .perfect > h3:nth-of-type(2) {
+  opacity: 0;
+}
+.top .article .perfect > h3:nth-of-type(2) > strong {
+  transition: 2s;
+  background-color: rgba(255, 255, 255, 0);
+}
+.top .article > h1 {
+  font-size: 120px;
+  margin-top: 30%;
+  padding-left: 3%;
+  letter-spacing: 8px;
+  font-family: "Playfair Display", serif;
+}
+.top .article > p {
+  font-family: "Roboto", sans-serif;
+  padding-left: 12%;
+  font-size: 20px;
+  font-weight: 600;
+  transform: scaleX(120%);
+}
+.top .article .link {
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 5%;
+}
+.top .article .link > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 40%;
+  color: #252537;
+  font-size: 14px;
+}
+.top .article .link > a:nth-of-type(2) {
+  height: 50px;
+  transition: 0.4s;
+  border-radius: 5px;
+  box-shadow: 0 0 50px 1px rgb(239, 195, 134);
+  background-color: #fff;
+}
+.top .article .link > a:nth-of-type(2):hover {
+  background-color: #252537;
+  color: white;
+}
+.top .span1 {
+  height: 1px;
+  width: 90%;
+  background-color: #252537;
+  position: absolute;
+  bottom: 40%;
+  right: 20%;
+}
+.top .span2 {
+  height: 1px;
+  width: 50%;
+  background-color: #252537;
+  position: absolute;
+  bottom: 0;
+  left: 21%;
+  z-index: 2;
+  transform: rotate(90deg);
+}
+.top .span3, .top .span4 {
+  height: 0.5px;
+  width: 7%;
+  background-color: #252537;
+  position: absolute;
+  top: 16%;
+  right: 10%;
+}
+.top .span3, .top .span5 {
+  transform: rotate(90deg);
+}
+.top .span5 {
+  height: 0.5px;
+  width: 3%;
+  background-color: #252537;
+  position: absolute;
+  top: 50%;
+  right: 12%;
+}
+.top .span6 {
+  height: 25px;
+  width: 25px;
+  background-color: #252537;
+  position: absolute;
+  top: 57%;
+  right: 13%;
+}
+.top:hover > .span7 {
+  right: 52%;
+}
+.top .span7 {
+  transition: 0.4s;
+  height: 25px;
+  width: 25px;
+  background-color: #252537;
+  position: absolute;
+  top: 15%;
+  right: -5%;
+  z-index: 2;
+}
+.top:hover > .span8 {
+  right: 50%;
+}
+.top .span8 {
+  transition: 0.4s;
+  height: 2px;
+  width: 3%;
+  background-color: #252537;
+  position: absolute;
+  top: 16%;
+  right: -5%;
+}
+.top > a {
+  transform: rotate(-90deg);
+  height: 50px;
+  width: 200px;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 6%;
+  left: 37%;
+  color: #252537;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+.unique {
+  width: 100%;
+  height: 300vh;
+  justify-content: center;
+  align-items: center;
+}
+.unique > * {
+  width: 100%;
+}
+.unique > *:not(.pic) {
+  color: black;
+  height: 50vh;
+}
+.unique > div:nth-of-type(1) {
+  justify-content: start;
+}
+.unique > div:nth-of-type(1) > article > h2 {
+  top: 20%;
+  left: 20%;
+}
+.unique > div:nth-of-type(1) > article > p {
+  top: 45%;
+  left: 10%;
+}
+.unique > div:nth-of-type(1) > article > span {
+  bottom: -5%;
+  left: 20%;
+}
+.unique > div:nth-of-type(2) {
+  position: relative;
+  margin-top: -2%;
+}
+.unique > div:nth-of-type(2) > article {
+  position: absolute;
+  top: 0;
+  right: 2%;
+}
+.unique > div:nth-of-type(2) > article > h2 {
+  top: 20%;
+  right: 10%;
+}
+.unique > div:nth-of-type(2) > article > p {
+  top: 45%;
+  left: -10%;
+}
+.unique > div:nth-of-type(2) > article > span {
+  bottom: -20%;
+  left: -10%;
+}
+.unique > div:nth-of-type(2) .black {
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: -80%;
+  left: 12%;
+}
+.unique > div:nth-of-type(2) .black > span {
+  font-size: 200px;
+  font-family: "Playfair Display", serif;
+  text-transform: capitalize;
+}
+.unique > div:nth-of-type(2) > span {
+  height: 1px;
+  background-color: #f9e1d5;
+  width: 30%;
+  transform: rotate(90deg);
+  position: absolute;
+  bottom: -32%;
+  left: 38.5%;
+  z-index: 50;
+}
+.unique > div:nth-of-type(4) {
+  position: relative;
+}
+.unique > div:nth-of-type(4) > article {
+  position: absolute;
+  top: 0;
+  right: -10%;
+}
+.unique > div:nth-of-type(4) > article > h2 {
+  top: 20%;
+  right: 10%;
+}
+.unique > div:nth-of-type(4) > article > p {
+  top: 48%;
+  left: -45%;
+}
+.unique > div:nth-of-type(4) > article > span {
+  bottom: -22%;
+  left: 18%;
+}
+.unique > div:nth-of-type(4) > span {
+  height: 1px;
+  background-color: black;
+  width: 30%;
+  transform: rotate(90deg);
+  position: absolute;
+  bottom: 39%;
+  left: 67%;
+  z-index: 2;
+}
+.unique > div:nth-of-type(5) {
+  position: relative;
+}
+.unique > div:nth-of-type(5) > article {
+  position: absolute;
+  bottom: 15%;
+  left: 25%;
+}
+.unique > div:nth-of-type(5) > article > h2 {
+  top: 20%;
+  right: 10%;
+}
+.unique > div:nth-of-type(5) > article > p {
+  top: 48%;
+  left: -48%;
+}
+.unique > div:nth-of-type(5) > article > span {
+  bottom: -10%;
+  left: 18%;
+}
+.unique > div:nth-of-type(5) > span {
+  height: 1px;
+  background-color: #e1ccc1;
+  width: 15%;
+  transform: rotate(90deg);
+  position: absolute;
+  bottom: 39%;
+  left: 33%;
+}
+.unique > div > article {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+.unique > div > article > * {
+  position: absolute;
+  text-transform: capitalize;
+}
+.unique > div > article > p {
+  font-family: Muller, Helvetica, Arial, serif;
+  font-size: 14px;
+  line-height: 25px;
+  padding: 0 30%;
+  font-weight: 400;
+}
+.unique > div > article > *:not(span) {
+  width: 100%;
+  z-index: 1;
+}
+.unique > div > article > h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 64px;
+}
+.unique > div > article > span {
+  font-family: "Playfair Display", serif;
+  font-size: 250px;
+  color: #fcebe2;
+}
+.unique .pic {
+  background-color: #1a1a1e;
+  margin-top: 10%;
+  height: 100vh;
+  position: relative;
+}
+.unique .pic > * {
+  position: absolute;
+}
+.unique .pic > figure {
+  height: 115vh;
+  width: 50%;
+}
+.unique .pic > figure > img {
+  height: 100%;
+  width: 100%;
+}
+.unique .pic .laptop_l {
+  left: 0;
+  top: -20%;
+}
+.unique .pic .laptop_r {
+  right: 0;
+  top: -30%;
+  z-index: 2;
+}
+.unique .pic > div {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  display: flex;
+  overflow: hidden;
+  width: 30%;
+  height: 50%;
+}
+.unique .pic > div .white {
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 61%;
+  left: -10%;
+}
+.unique .pic > div .white > span {
+  font-size: 200px;
+  font-family: "Playfair Display", serif;
+  text-transform: capitalize;
+  color: white;
+}
+.unique .pic .smooth {
+  width: 50%;
+  position: relative;
+  top: 18%;
+  margin-left: 32%;
+}
+.unique .pic .smooth > article {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.unique .pic .smooth > article > * {
+  position: absolute;
+  text-transform: capitalize;
+  width: 100%;
+  z-index: 1;
+}
+.unique .pic .smooth > article > p {
+  font-family: Muller, Helvetica, Arial, serif;
+  font-size: 14px;
+  line-height: 25px;
+  padding: 0 30%;
+  font-weight: 400;
+  color: white;
+  top: 32%;
+  left: -28%;
+}
+.unique .pic .smooth > article > h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 64px;
+  color: #f9e1d5;
+}
+.unique .pic .smooth > article > a {
+  width: 25%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 12px;
+  z-index: 2;
+  font-family: Muller, Helvetica, Arial, serif;
+  border: 1px solid #f9e1d5;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  bottom: 0;
+  left: 2%;
+  transition: 0.4s;
+}
+.unique .pic .smooth > article > a:hover {
+  background-color: white;
+  color: #1a1a1e;
+}
+
+.features {
+  height: 170vh;
+  background-color: #f9e1d5;
+  margin-top: 12%;
+}
+.features:hover > div:nth-of-type(1) > div > span {
+  width: 20%;
+  opacity: 1;
+}
+.features > div {
+  width: 100%;
+}
+.features > div:nth-of-type(1) {
+  justify-content: center;
+  height: 20vh;
+  padding-top: 3%;
+  flex-wrap: nowrap;
+}
+.features > div:nth-of-type(1) > * {
+  display: flex;
+  align-items: center;
+}
+.features > div:nth-of-type(1) > div {
+  width: 30%;
+}
+.features > div:nth-of-type(1) > div:nth-of-type(1) {
+  justify-content: end;
+}
+.features > div:nth-of-type(1) > div:nth-of-type(2) {
+  justify-content: start;
+}
+.features > div:nth-of-type(1) > div > span {
+  opacity: 0;
+  transition: 0.4s;
+  width: 0;
+  height: 1px;
+  background-color: #252537;
+}
+.features > div:nth-of-type(1) > h2 {
+  width: 40%;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 46px;
+  font-weight: 600;
+  color: #252537;
+}
+.features > div:nth-of-type(2) {
+  margin-bottom: 7%;
+  position: relative;
+  display: flex;
+  height: 110vh;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+.features > div:nth-of-type(2) > div {
+  justify-content: center;
+  align-items: center;
+}
+.features > div:nth-of-type(2) > div > * {
+  width: 100%;
+}
+.features > div:nth-of-type(2) > div .icon {
+  height: 120px;
+  width: 120px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.features > div:nth-of-type(2) > div .icon > * {
+  position: absolute;
+  border-radius: 50%;
+  background-color: white;
+}
+.features > div:nth-of-type(2) > div .icon:hover > a {
+  box-shadow: 0 0 50px 1px #c1a79b;
+  border: 1px solid white;
+}
+.features > div:nth-of-type(2) > div .icon > span {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.features > div:nth-of-type(2) > div .icon > a {
+  box-shadow: 0 0 50px 1px transparent;
+  transition: 1s;
+  display: flex;
+  z-index: 1;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+  border: 1px solid #f9e1d5;
+}
+.features > div:nth-of-type(2) > div .icon > a > i {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  font-weight: 300;
+}
+.features > div:nth-of-type(2) > div > h5 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #252537;
+  font-size: 16px;
+}
+.features > div:nth-of-type(2) > div > p {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 200;
+  padding: 0 20%;
+  margin-top: -3%;
+}
+.features > div:nth-of-type(2) > div > h3 {
+  font-size: 38px;
+  height: 40%;
+  padding: 0 32%;
+  text-align: center;
+  color: #252537;
+  text-transform: uppercase;
+  margin-bottom: 2%;
+}
+.features > div:nth-of-type(2) > div > a {
+  transition: 0.4s;
+  width: 40%;
+  height: 50px;
+  border-radius: 3px;
+  background-color: white;
+  box-shadow: 0 0 50px 1px #e8b9a4;
+  font-size: 14px;
+  font-weight: 100;
+  color: #252537;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.features > div:nth-of-type(2) > div > a:hover {
+  background-color: #252537;
+  color: white;
+}
+.features > div:nth-of-type(2) .span1, .features > div:nth-of-type(2) .span2 {
+  height: 1px;
+  width: 80%;
+  position: absolute;
+  bottom: 33%;
+  left: 10%;
+  background-color: white;
+}
+.features > div:nth-of-type(2) .span2 {
+  bottom: 66%;
+}
+.features > div:nth-of-type(2) .span3, .features > div:nth-of-type(2) .span4 {
+  height: 1px;
+  width: 30%;
+  position: absolute;
+  bottom: 51%;
+  left: 50%;
+  transform: rotate(90deg);
+  background-color: white;
+}
+.features > div:nth-of-type(2) .span4 {
+  left: 18%;
+}
+
+.people {
+  height: 100vh;
+  width: 100%;
+}
+.people > * {
+  width: 100%;
+}
+.people .main {
+  position: relative;
+  height: 90vh;
+}
+.people .main > figure:nth-of-type(1) {
+  width: 100%;
+  height: 100%;
+}
+.people .main > figure:nth-of-type(1) > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.people .main > figure:nth-of-type(1) > figcaption {
+  background-color: rgba(0, 0, 0, 0.497);
+}
+.people .main > h3 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  position: absolute;
+  top: 15%;
+  left: 37%;
+  text-transform: uppercase;
+}
+.people .main .laptop {
+  width: 70%;
+  height: 80%;
+}
+.people .main .laptop > img {
+  position: absolute;
+}
+.people .main .laptop > img:nth-of-type(1) {
+  width: 60%;
+  height: 85%;
+  bottom: -23%;
+  left: 19%;
+}
+.people .main .laptop > img:nth-of-type(2) {
+  width: 46%;
+  height: 58%;
+  bottom: -1%;
+  left: 26%;
+}
+.people .main .laptop > figcaption {
+  position: absolute;
+  width: 46%;
+  height: 58%;
+  bottom: -1%;
+  left: 26%;
+  background-color: rgba(0, 0, 0, 0.468);
+}
+.people .main .flash_l, .people .main .flash_r {
+  width: 50px;
+  height: 10px;
+  position: absolute;
+  left: 20%;
+  bottom: 40%;
+}
+.people .main .flash_l > img, .people .main .flash_r > img {
+  width: 100%;
+  height: 100%;
+}
+.people .main .flash_r {
+  left: 74.5%;
+}
+.people .main > div:nth-of-type(1) {
+  position: absolute;
+  bottom: 0;
+  left: 28%;
+  width: 42%;
+  height: 50%;
+}
+.people .main > div:nth-of-type(1) > * {
+  color: rgba(255, 255, 255, 0.768);
+}
+.people .main > div:nth-of-type(1) > p {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 100;
+  width: 100%;
+  padding: 0 10%;
+  margin-top: 7%;
+  line-height: 30px;
+  text-align: center;
+}
+.people .main > div:nth-of-type(1) > span {
+  position: absolute;
+}
+.people .main > div:nth-of-type(1) > span > i {
+  font-size: 40px;
+}
+.people .main > div:nth-of-type(1) > span:nth-of-type(1) {
+  bottom: 47%;
+  right: 5%;
+  transform: rotate(180deg);
+}
+.people .main > div:nth-of-type(1) > span:nth-of-type(2) {
+  top: 7%;
+  left: 4%;
+}
+.people .main > div:nth-of-type(1) > h5 {
+  width: 100%;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+.people .main > span {
+  font-family: "Playfair Display", serif;
+  font-size: 300px;
+  color: #f9ede6;
+  position: absolute;
+  bottom: -48%;
+  left: 6%;
+}
+.people .main > a {
+  transition: 0.4s;
+  width: 15%;
+  height: 50px;
+  border-radius: 3px;
+  background-color: white;
+  font-size: 14px;
+  font-weight: 100;
+  color: #252537;
+  border: 1px solid #252537;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -33%;
+  left: 42%;
+}
+.people .main > a:hover {
+  background-color: #252537;
+  color: white;
+}
+.people .main .black2 {
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: -88%;
+  left: 55%;
+}
+.people .main .black2 > span {
+  font-size: 200px;
+  font-family: "Playfair Display", serif;
+  color: #1a1a1e;
+  text-transform: capitalize;
+}
+
+.everyone {
+  height: 140vh;
+  width: 100%;
+  background-color: #1a1a1e;
+  margin-top: 20%;
+  position: relative;
+}
+.everyone:hover > div:nth-of-type(1) > div > span {
+  width: 20%;
+  opacity: 1;
+}
+.everyone > div:nth-of-type(1) {
+  position: absolute;
+  width: 80%;
+  top: 5%;
+  left: 10%;
+  height: 20vh;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.everyone > div:nth-of-type(1) > * {
+  display: flex;
+  align-items: center;
+}
+.everyone > div:nth-of-type(1) > div {
+  width: 30%;
+}
+.everyone > div:nth-of-type(1) > div:nth-of-type(1) {
+  justify-content: end;
+}
+.everyone > div:nth-of-type(1) > div:nth-of-type(2) {
+  justify-content: start;
+}
+.everyone > div:nth-of-type(1) > div > span {
+  opacity: 0;
+  transition: 0.4s;
+  width: 0;
+  height: 1px;
+  background-color: white;
+}
+.everyone > div:nth-of-type(1) > h2 {
+  width: 40%;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 46px;
+  font-weight: 600;
+  color: white;
+}
+.everyone > div:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  left: 58%;
+  display: flex;
+  overflow: hidden;
+  width: 30%;
+  height: 50%;
+}
+.everyone > div:nth-of-type(2) .white {
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 53%;
+  left: -10%;
+}
+.everyone > div:nth-of-type(2) .white > span {
+  font-size: 200px;
+  font-family: "Playfair Display", serif;
+  text-transform: capitalize;
+  color: white;
+}
+.everyone .pics {
+  height: 110vh;
+  width: 100%;
+  margin-top: 13%;
+  padding: 0 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 10%;
+       column-gap: 10%;
+  grid-template-rows: repeat(12, 1fr);
+}
+.everyone .pics > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.everyone .pics > figure:nth-of-type(1), .everyone .pics > figure:nth-of-type(3) {
+  grid-row: 1/span 3;
+}
+.everyone .pics > figure:nth-of-type(2) {
+  grid-row: 2/span 3;
+}
+.everyone .pics > figure:nth-of-type(4), .everyone .pics > figure:nth-of-type(6) {
+  grid-row: 5/span 3;
+}
+.everyone .pics > figure:nth-of-type(5) {
+  grid-row: 6/span 3;
+}
+.everyone .pics > figure:nth-of-type(7), .everyone .pics > figure:nth-of-type(9) {
+  grid-row: 9/span 3;
+}
+.everyone .pics > figure:nth-of-type(8) {
+  grid-row: 10/span 3;
+}
+.everyone .bg {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.858), rgba(0, 0, 0, 0.551), rgba(0, 0, 0, 0.171), transparent);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.foot {
+  height: 40vh;
+  width: 100%;
+  background-color: #f0f4f7;
+}
+.foot > * {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foot > h4 {
+  text-transform: capitalize;
+  color: #252537;
+  font-size: 24px;
+}
+.foot > h4:nth-of-type(1) {
+  margin-top: 2%;
+  text-transform: uppercase;
+}
+.foot > h4 > strong {
+  padding-left: 5px;
+  text-transform: uppercase;
+}
+.foot > div {
+  justify-content: center;
+  align-items: center;
+}
+.foot > div > div {
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  margin: 0 2%;
+}
+.foot > div > div > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foot > div > div > a > i {
+  color: white;
+}
+.foot > div > div:nth-of-type(1) {
+  background-color: black;
+  box-shadow: 0 0 20px 0.5px rgba(0, 0, 0, 0.71);
+}
+.foot > div > div:nth-of-type(2) {
+  background-color: #1d96ef;
+  box-shadow: 0 0 30px 1px rgba(29, 151, 239, 0.737254902);
+}
+.foot > div > div:nth-of-type(3) {
+  background-color: #3b5998;
+  box-shadow: 0 0 30px 1px rgba(59, 88, 152, 0.7725490196);
+}
+.foot > div > div:nth-of-type(4) {
+  background-image: linear-gradient(45deg, orange, #e6683c, orangered 40%, #cc2366 75%, #bc1888);
+  box-shadow: 0 0 30px 1px hotpink;
+}
+.foot > div > div:nth-of-type(5) {
+  background-color: #005cff;
+  box-shadow: 0 0 30px 1px rgba(0, 94, 255, 0.6784313725);
+}/*# sourceMappingURL=master.css.map */
