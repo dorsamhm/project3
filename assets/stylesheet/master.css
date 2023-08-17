@@ -879,7 +879,7 @@ a {
 .everyone > div:nth-of-type(2) .white {
   transform: rotate(-90deg);
   position: absolute;
-  bottom: 53%;
+  bottom: 59%;
   left: -10%;
 }
 .everyone > div:nth-of-type(2) .white > span {
